@@ -2,4 +2,11 @@
 layout: default
 ---
 
+<a href="/posts">< posts</a>
+<h2>{{ page.title }}</h2>
+{% assign date_str = page.date | date: "%b %Y" %}
+<b>Posted in {{ date_str }}</b>
+<br/>
+<br/>
+
 {{ content }}
